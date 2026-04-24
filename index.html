@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electro Smart Solution</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="STYLE.CSS" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">Electro Smart Solution</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">À propos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Solutions électriques professionnelles</p>
+          <h1>Énergie, confort et sécurité pour votre habitat ou votre entreprise</h1>
+          <p>Electro Smart Solution assure le dépannage, l'installation électrique, la climatisation, l'énergie solaire et la rénovation avec une exécution rapide et de qualité.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Contactez-nous</a>
+            <a class="btn btn-secondary" href="#services">Nos services</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-content">
+            <p class="highlight">Disponible 24/7</p>
+            <h2>Assistance sur site rapide</h2>
+            <p>Nos techniciens certifiés interviennent rapidement pour réparer, installer et améliorer vos installations en toute sécurité.</p>
+            <ul>
+              <li>Dépannage fiable</li>
+              <li>Projets solaires clés en main</li>
+              <li>Rénovation et modernisation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div>
+          <span class="section-label">À propos</span>
+          <h2>Votre partenaire pour des installations électriques performantes</h2>
+          <p>Electro Smart Solution combine expertise technique et service client attentif pour garantir des solutions durables et efficaces. Nous intervenons dans les secteurs résidentiel, commercial et industriel.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <strong>+10 ans</strong>
+            <span>d'expérience</span>
+          </div>
+          <div class="stat-card">
+            <strong>+200</strong>
+            <span>projets réalisés</span>
+          </div>
+          <div class="stat-card">
+            <strong>24/7</strong>
+            <span>assistance disponible</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <span class="section-label">Services</span>
+        <h2>Nos domaines d'expertise</h2>
+        <p class="section-intro">Des solutions électriques complètes pour vos besoins en dépannage, installation, climatisation, solaire et rénovation.</p>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">⚡</div>
+            <h3>Dépannage électrique</h3>
+            <p>Interventions rapides pour pannes, fusibles, prises, interrupteurs et sécurité des installations.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🔌</div>
+            <h3>Installation électrique</h3>
+            <p>Conception et pose de réseaux neufs, tableaux électriques, mise à la terre et conformité aux normes.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">❄️</div>
+            <h3>Climatisation</h3>
+            <p>Installation, entretien et dépannage de systèmes de climatisation pour un confort durable.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">☀️</div>
+            <h3>Énergie solaire</h3>
+            <p>Solutions photovoltaïques sur mesure pour réduire votre facture énergétique et augmenter votre autonomie.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🔧</div>
+            <h3>Rénovation</h3>
+            <p>Modernisation des installations électriques et amélioration de l'efficacité énergétique pour bâtiments existants.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <span class="section-label">Contact</span>
+          <h2>Commencez votre projet aujourd'hui</h2>
+          <p>Appelez-nous pour obtenir un devis détaillé, une intervention urgente ou un audit de votre installation électrique.</p>
+          <div class="contact-details">
+            <div>
+              <strong>Téléphone</strong>
+              <a href="tel:+243825558089">+243 82 555 8089</a>
+            </div>
+            <div>
+              <strong>Support</strong>
+              <a href="tel:+243962472454">+243 96 247 2454</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Votre email" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Votre demande" required></textarea>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+          <p class="form-note">Nous vous recontacterons sous 24 heures.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Electro Smart Solution. Tous droits réservés.</p>
+      <p>Service de dépannage électrique, installation, climatisation, énergie solaire et rénovation.</p>
+    </div>
+  </footer>
+
+  <script src="SCRIPT.JS" defer></script>
+</body>
+</html>
